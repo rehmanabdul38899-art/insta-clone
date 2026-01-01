@@ -1,16 +1,18 @@
 <!DOCTYPE html>
 <html>
 <head>
+  <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Reels Demo</title>
+  <title>Reels App</title>
 
   <style>
     body {
       margin: 0;
       background: black;
-      display: flex;
-      justify-content: center;
-      align-items: center;
+      overflow: hidden;
+    }
+    .reel {
+      width: 100vw;
       height: 100vh;
     }
     video {
@@ -22,10 +24,14 @@
 </head>
 <body>
 
-  <video controls autoplay loop>
-    <source src="https://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4">
-  </video>
+  <div class="reel">
+    <video id="video" autoplay loop muted>
+      <source src="https://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4">
+    </video>
+  </div>
 
+  <!-- JavaScript file link -->
   <script src="script.js"></script>
+
 </body>
 </html>
