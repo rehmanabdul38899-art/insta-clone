@@ -1,59 +1,40 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Insta Clone</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Reels App</title>
   <style>
     body {
-      font-family: Arial;
-      background: #fafafa;
       margin: 0;
-      padding: 0;
+      background: black;
+      color: white;
+      font-family: sans-serif;
     }
-    header {
-      background: white;
-      padding: 10px;
-      text-align: center;
-      font-weight: bold;
-      border-bottom: 1px solid #ddd;
+    .reel {
+      height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-bottom: 1px solid #222;
     }
-    .post {
-      background: white;
-      margin: 10px;
-      padding: 10px;
-      border-radius: 5px;
-    }
-    .post img {
-      width: 100%;
-      border-radius: 5px;
-    }
-    .reel video {
-      width: 100%;
-      margin-top: 20px;
+    video {
+      max-height: 100%;
+      max-width: 100%;
     }
   </style>
 </head>
-
 <body>
 
-<header>Instagram</header>
-
-<div class="post">
-  <b>@abdul</b>
-  <img src="https://picsum.photos/400/400">
-  <p>❤️ 120 likes</p>
-</div>
-
-<div class="post">
-  <b>@user123</b>
-  <img src="https://picsum.photos/401/401">
-  <p>❤️ 89 likes</p>
+<div class="reel">
+  <video src="reel1.mp4" controls autoplay loop></video>
 </div>
 
 <div class="reel">
-  <video controls autoplay loop>
-    <source src="https://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4">
-  </video>
+  <video src="reel2.mp4" controls loop></video>
+</div>
+
+<div class="reel">
+  <video src="reel3.mp4" controls loop></video>
 </div>
 
 </body>
