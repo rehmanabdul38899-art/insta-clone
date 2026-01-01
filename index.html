@@ -2,41 +2,59 @@
 <html>
 <head>
   <title>Insta Clone</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <style>
     body {
       font-family: Arial;
       background: #fafafa;
-      text-align: center;
+      margin: 0;
+      padding: 0;
     }
-    .card {
-      width: 300px;
-      margin: 50px auto;
-      padding: 20px;
+    header {
       background: white;
-      border: 1px solid #ddd;
+      padding: 10px;
+      text-align: center;
+      font-weight: bold;
+      border-bottom: 1px solid #ddd;
     }
-    input {
-      width: 90%;
-      padding: 8px;
-      margin: 5px;
+    .post {
+      background: white;
+      margin: 10px;
+      padding: 10px;
+      border-radius: 5px;
     }
-    button {
-      width: 95%;
-      padding: 8px;
-      background: #3897f0;
-      color: white;
-      border: none;
+    .post img {
+      width: 100%;
+      border-radius: 5px;
+    }
+    .reel video {
+      width: 100%;
+      margin-top: 20px;
     }
   </style>
 </head>
+
 <body>
 
-  <div class="card">
-    <h2>Instagram</h2>
-    <input placeholder="Username">
-    <input type="password" placeholder="Password">
-    <button>Log In</button>
-  </div>
+<header>Instagram</header>
+
+<div class="post">
+  <b>@abdul</b>
+  <img src="https://picsum.photos/400/400">
+  <p>❤️ 120 likes</p>
+</div>
+
+<div class="post">
+  <b>@user123</b>
+  <img src="https://picsum.photos/401/401">
+  <p>❤️ 89 likes</p>
+</div>
+
+<div class="reel">
+  <video controls autoplay loop>
+    <source src="https://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4">
+  </video>
+</div>
 
 </body>
 </html>
